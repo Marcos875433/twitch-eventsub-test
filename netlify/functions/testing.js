@@ -5,7 +5,7 @@ exports.handler = async (event) => {
     const eventType = headers['twitch-eventsub-subscription-type']
 
     if (type !== 'notification' || eventType !== 'channel.subscription.message') {
-        return {statusCode:200, body: ''};
+        return {statusCode:200, body: 'c'};
     }
 
     console.log({
