@@ -1,6 +1,7 @@
 const express = require('express')
 const crypto = require('crypto');
 const app = express();
+const port = process.env.PORT || 3000;
 const twitchSigningSecret = 'cabezadetornilloazul';
 exports.handler = async (event) => {
     const { headers = [] } = event;
